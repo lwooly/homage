@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "icomoon";
+    src: url(../fonts/icomoon.woff2) format(woff2);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Tisa Sans Pro Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tisa Sans Pro Regular'), url(../fonts/Tisa\ Sans\ Pro\ Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Tisa Sans Pro Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Tisa Sans Pro Medium'), url('../fonts/Tisa\ Sans\ Pro\ Medium.woff') format('woff');
+}

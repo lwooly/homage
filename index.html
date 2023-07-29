@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Noto+Sans+Display:wdth,wght@62.5,502&family=Pragati+Narrow:wght@700&family=Roboto+Flex:opsz,wdth,wght@8..144,37.4,441&family=Saira+Extra+Condensed:wght@500&family=Sofia+Sans+Extra+Condensed:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts.css">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="styles/generics.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Boardshop Homage</title>
+</head>
+
+<body>
+    <div class="sticky-header">
+        <header class="page-header">
+            <a class="tablet-logo" href="#">
+                <img src="./images/logo-tablet.png" alt="Boardshop logo">
+            </a>
+
+            <div class="menu-wrapper">
+                <div class="mobile-logo">
+                    <img class="logo" src="./images/logo.png" alt="boardshop.co.uk">
+                </div>
+                <div class="link-bar">
+                    <a href="#" class="link desktop-only">OUR PROMISES</a>
+                    <a href="#" class="link desktop-only">JOIN</a>
+                    <a href="#" class="link">MY ACCOUNT</a>
+                    <a href="#" class="orange-hover link desktop-only">
+                        <span><img class="flag" src="./images/gbp_1_4.png" alt="British flag"></span>
+                        <span class="currency">£ GBP</span>
+                    </a>
+
+                    <div class="link orange-hover basket">
+                        <label for="basket-content-toggle">
+                            <span class="basket-items tablet-inline">0 ITEMS - £0.00</span>
+                        </label>
+                        <input class="hidden" type="checkbox" id="basket-content-toggle">
+                        <div class="dropdown basket-content">
+                            <p>You have no items in your shopping cart.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="nav-bar">
+            <a class="menu-icon nav-item desktop-hide material-icons" href="#">
+                <span class="menu-text">BROWSE SHOP</span>
+            </a>
+            <h1 class="nav-item desktop-icon desktop-only"><img src="./images/logo-desktop.png" alt="Boardshop logo">
+            </h1>
+            <div class="desktop-menu-bar desktop-only">
+                <a class="nav-item no-left-border">BRANDS</a>
+                <a class="nav-item no-left-border">NEW</a>
+                <a class="nav-item no-left-border">SURFBOARDS</a>
+                <a class="nav-item no-left-border">SURF ACCESSORIES</a>
+                <a class="nav-item no-left-border">WETSUITS</a>
+                <a class="nav-item no-left-border">BODYBOARD</a>
+                <!-- make some of the dropdowns toggle -->
+                <div class="nav-item no-left-border label-container">
+                    <input class="hidden" type="checkbox" id="custom-drop-btn">
+                    <label class="drop-label" for="custom-drop-btn">CUSTOM BOARD BUILDER</label>
+                    <div class="custom-dropdown dropdown">
+                        <ul>
+                            <li>Build A Custom Surfboard</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-item no-left-border label-container">
+                    <input class="hidden" type="checkbox" id="best-drop-btn">
+                    <label class="drop-label" for="best-drop-btn">BEST SELLERS</label>
+                    <div class="best-dropdown dropdown">
+                        <ul>
+                            <li>SURFBOARDS</li>
+                            <li>Pyzel Phantom</li>
+                            <li>Pyzel Ghost</li>
+                            <li>Pyzel Gremlin</li>
+                            <li>Firewire Greedy Beaver</li>
+                            <li>Firewire Evo</li>
+                            <li>Hayden Shapes Hypto Krypto</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-item no-left-border text-is-red label-container">
+                    <input class="hidden" type="checkbox" id="sale-drop-btn">
+                    <label class="drop-label" for="sale-drop-btn">SALE</label>
+                    <div class="sale-dropdown dropdown">
+                        <ul>
+                            <li>Shop All Sale</li>
+                            <li>Surfboard Sale</li>
+                            <li>Surf Accessories Sale</li>
+                            <li>Wetsuit Sale</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <form class="push-right search-bar nav-item material-icons" action="#">
+                <input class="search-input" id="search" type="text" placeholder="SEARCH" autocomplete="off">
+            </form>
+        </nav>
+    </div>
+    <main class="page-main">
+        <div class="main-grid">
+            <div class="notices">
+                <a href="#" class="underline">
+                    <span class="tablet-hide">Fast &amp; free delivery - get it tomorrow</span>
+                    <span class="desktop-hide">Fast &amp; free delivery</span>
+                </a>
+                <a href="#" class="underline">
+                    <span class="tablet-hide">No hassle 14-day returns on everything</span>
+                    <span class="desktop-hide">No hassle 14-day returns</span>
+                </a>
+                <a href="#" class="underline">
+                    <span class="tablet-hide">★ Save 5% on everything - join our loyalty scheme</span>
+                    <span class="desktop-hide">Save 5% on everything - join our loyalty scheme</span>
+                </a>
+
+            </div>
+            <div class="slideshow">
+                <div class="slides">
+                    <div class="surfboards slide" id="surfboards">
+                        <div class="section-text-wrapper">
+                            <h2 class="section-title">HUGE SURFBOARD RANGE</h2>
+                            <p class="section-text">An unbeatable range of premium surfboards from high performance
+                                short boards to grovelers and all the other essentials you need #RideWithUs</p>
+                        </div>
+                        <span class="button">SHOP NOW</span>
+                    </div>
+                    <div class="wetsuits slide" id="wetsuits">
+                        <div class="section-text-wrapper">
+                            <h2 class="section-title">WETSUITS</h2>
+                            <p class="section-text">Whether it's a hooded 6mm cold water wetsuit or a shorty for foreign
+                                waves we have you covered #RideWithUs</p>
+                        </div>
+                        <span class="button">SHOP NOW</span>
+                    </div>
+                    <div class="accessories slide" id="accessories">
+                        <div class="section-text-wrapper">
+                            <h2 class="section-title">SURF ACCESSORIES</h2>
+                            <p class="section-text">A great selection of fins, leashes, tail pads, board bags + more
+                                surf essentials from the best brands out there #RideWithUs</p>
+
+                        </div>
+                        <span class="button">SHOP NOW</span>
+                    </div>
+                </div>
+
+                <!-- js added to allow image link to be clicked to style button and change slide at same time. I couldn't get a link and checkbox selected with single click in css. -->
+                <div class="image-links-wrapper wrapper">
+                    <input class="link-btn hidden" type="radio" name="slide-change" id="surfboards-radio" checked
+                        onclick="window.location.href='#surfboards';">
+                    <label class="image-link" for="surfboards-radio">SURFBOARDS</label>
+
+                    <input class="link-btn hidden" type="radio" name="slide-change" id="wetsuits-radio"
+                        onclick="window.location.href='#wetsuits';">
+                    <label class="image-link" for="wetsuits-radio">WETSUITS</label>
+
+                    <input class="link-btn hidden" type="radio" name="slide-change" id="accessories-radio"
+                        onclick="window.location.href='#accessories';">
+                    <label class="image-link" for="accessories-radio">SURF ACCESSORIES</label>
+
+                </div>
+            </div>
+            <div class="promo-grid">
+                <article class="form-surf promotion-image">
+                    <div class="section-text-wrapper">
+                        <h2 class="section-title promotion-title form-title">FORM SURFBOARDS</h2>
+                        <p class="section-text promotion-text form-text">Innovative surfboards and brain child of
+                            pro surfer Alan Stokes and surfboard maestro Luke Hart available only at Boardshop.</p>
+                    </div>
+                </article>
+                <article class="firewire-surf promotion-image">
+                    <div class="section-text-wrapper">
+                        <h3 class="section-title promotion-title">FIREWIRE SURFBOARDS - PERFORMANCE INNOVATION &
+                            CREATIVITY</h3>
+                        <span class="button">SHOP NOW</span>
+                    </div>
+                </article>
+                <article class="promo-c promotion-card">
+                    <div class="card-text-wrapper">
+                        <h3 class="card-title">FAST & FREE DELIVERY</h3>
+                        <p class="card-text">Order by 2pm mon to fri for same day despatch*</p>
+                        <p class="card-terms">*OVER £50 - EXCLUSIONS APPLY</p>
+                    </div>
+                </article>
+                <article class="promo-d promotion-card">
+                    <div class="card-text-wrapper">
+                        <h3 class="card-title">0% FINANCE</h3>
+                        <p class="card-text">Spreading the cost of your purchase has never been easier</p>
+                        <p class="card-terms">SELECT FROM 6 OR 10 MONTHS</p>
+                    </div>
+                </article>
+            </div>
+            <div class="features-article">
+                <section class="feature-heading">
+                    <h2 class="feature-title">WHAT MAKES BOARDSHOP DIFFERENT?</h2>
+                    <p class="feature-text">A boardsports store run by surfers, with unique promises and features!
+                    </p>
+                </section>
+                <section class="feature day-guarantee">
+                    <div class="background-filter">
+                        <h3 class="feature-title">30-DAY RIDEOUT GUARANTEE</h3>
+                        <p class="feature-text"> We know what it’s like to get the wrong board and we’ll never leave
+                            any of our customers stuck with a board that isn’t right for them. Our RIDE OUT
+                            guarantee means the risk of buying the wrong board is a thing of the past. Terms &
+                            Conditions apply.</p>
+                        <span class="button">LEARN MORE</span>
+                    </div>
+                </section>
+                <section class="feature wetsuit-guarantee">
+                    <div class="background-filter">
+                        <h3 class="feature-title">EXTENDED WETSUIT WARRANTY</h3>
+                        <p class="feature-text"> We all use the wetsuits we sell and that’s why we’re happy to offer
+                            an extended warranty over and above what the manufacturers offer. Another first from
+                            Boardshop to keep you doing what you love for longer. </p>
+                        <span class="button">LEARN MORE</span>
+                    </div>
+                </section>
+                <section class="feature custom-board">
+                    <div class="background-filter">
+                        <h3 class="feature-title">BESPOKE CUSTOM SURFBOARD BUILDER</h3>
+                        <p class="feature-text">Boardshop.co.uk is run by surfers for surfers and we know that stock
+                            dimensions do not work for everyone. Our solution is the world's first independent,
+                            custom surfboard builder.</p>
+                        <span class="button">BUILD NOW</span>
+                    </div>
+                </section>
+                <section class="feature trade-in">
+                    <div class="background-filter">
+                        <h3 class="feature-title">TRADE IN YOUR OLD SURFBOARD</h3>
+                        <p class="feature-text">Looking to purchase a new surfboard? We're now doing Trade ins! So
+                            if you have a pre-loved board in reasonable condition that you would like to get rid of
+                            we can offset it against a brand new board!</p>
+                        <span class="button">LEARN MORE</span>
+                    </div>
+                </section>
+            </div>
+            <div class="blog">
+                <section class="blog-heading">
+                    <h2 class="feature-title">LATEST FROM THE BOARDSHOP.CO.UK BLOG</h2>
+                    <p class="feature-text">News, reviews, videos and much more from the boardshop.co.uk team...
+                        click here to read our blog.</p>
+                </section>
+
+                <div class="blog-articles">
+                    <article class="blog-article">
+                        <picture class="blog-image">
+                            <img src="./images/Thumbnail2.jpg" alt="Airwaves - a conversation with surfers">
+                        </picture>
+                        <h3 class="blog-title underline">AIRWAVES: A CONVERSATION WITH SURFERS</h3>
+                        <p class="date">6 JUL 2023</p>
+                    </article>
+                    <article class="blog-article">
+                        <picture class="blog-image">
+                            <img src="./images/Thumbnail-lib.jpg" alt="Airwaves - a conversation with surfers">
+                        </picture>
+                        <h3 class="blog-title underline">LIBTECH SURFBOARDS</h3>
+                        <p class="date">12 MAY 2023</p>
+                    </article>
+                    <article class="blog-article">
+                        <picture class="blog-image">
+                            <img src="./images/boardshop-ride-with-us-surf-edit-portugal-trip-thumbnail_1.jpg"
+                                alt="Airwaves - a conversation with surfers">
+                        </picture>
+                        <h3 class="blog-title underline">OUR EPIC SURF ADVENTURE</h3>
+                        <p class="date">25 APR 2023</p>
+                    </article>
+                    <article class="blog-article">
+                        <picture class="blog-image">
+                            <img src="./images/boardshop-ride-with-us-project-thumb.jpg"
+                                alt="Airwaves - a conversation with surfers">
+                        </picture>
+                        <h3 class="blog-title underline">THE RIDE WITH US PROJECT</h3>
+                        <p class="date">31 MAR 2023</p>
+                    </article>
+                </div>
+            </div>
+            <section class="contact">
+                <div class="contact-wrapper expert">
+                    <h3 class="contact-title">EXPERT HELP & ADVICE</h3>
+                    <p class="contact-text email">Drop us an email:
+                        <a href="mailto:info@boardshop.co.uk">info@boardshop.co.uk</a>
+                    </p>
+                </div>
+                <div class="contact-wrapper newsletter">
+                    <h3 class="contact-title">SIGN UP TO OUR NEWSLETTER</h3>
+                    <p class="contact-text">Exclusive discounts, offers and news.</p>
+                    <form action="#">
+                        <input class="sign-up" type="email" name="newsletter" id="newsletter"
+                            placeholder="ENTER YOUR EMAIL ADDRESS">
+                        <button class="signup-button" type="submit"><span class="arrow-right"></span></button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="page-footer">
+        <section class="footer-links">
+            <div class="footer-section">
+                <label class="footer-title drop-down" for="your-boardshop">YOUR BOARDSHOP.CO.UK</label>
+                <input class="hidden" type="checkbox" id="your-boardshop">
+                <a href="#">My Account</a>
+                <a href="#">Order Status</a>
+                <a href="#">Track An Order</a>
+                <a href="">My Loyalty Bonus</a>
+                <a href="">Wetsuit Recycling</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="footer-section">
+                <label class="footer-title drop-down" for="c-service">CUSTOMER SERVICE</label>
+                <input class="hidden" type="checkbox" id="c-service">
+                <a href="">Contact Us</a>
+                <a href="">Secure Shopping</a>
+                <a href="">Returns</a>
+                <a href="">Delivery Rates & Information</a>
+                <a href="">Reviews and Feedback</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">Jobs</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookies</a>
+                <a href="">Shipping Transparency</a>
+            </div>
+            <div class="footer-section">
+                <label class="footer-title drop-down" for="about">ABOUT</label>
+                <input class="hidden" type="checkbox" id="about">
+                <a href="">About Boardshop</a>
+                <a href="">Loyalty Bonus</a>
+                <a href="">0% Finance</a>
+                <a href="">Surfboard Trade Ins</a>
+                <a href="">The Surfboard Showroom</a>
+                <a href="">30 Day Ride Out Guarantee</a>
+                <a href="">Brexit</a>
+                <a href="">Gift Vouchers</a>
+            </div>
+            <div class="footer-section socials">
+                <h4 class="social-title">SOCIALISE WITH US</h4>
+                <a class="social-link" href=""><span class="icon-twitter"></span><span
+                        class="social-name">Twitter</span></a>
+                <a class="social-link" href=""><span class="icon-facebook"></span><span
+                        class="social-name">Facebook</span></a>
+                <a class="social-link" href=""><span class="icon-youtube"></span><span
+                        class="social-name">Youtube</span></a>
+                <a class="social-link" href=""><span class="icon-instagram"></span><span
+                        class="social-name">Instagram</span></a>
+            </div>
+        </section>
+        <div class="payments">
+            <div class="companies">
+                <div>
+                    <img src="./images/companies/dpd.png" alt="DPD logo">
+                </div>
+                <div>
+                    <img src="./images/companies/mastercard.png" alt="Mastercard logo">
+                </div>
+                <div>
+                    <img src="./images/companies/mastercard_securecode.png" alt="Mastercard securecard logo">
+                </div>
+                <div>
+                    <img src="./images/companies/verfied_by_visa.png" alt="Verified by visa logo">
+                </div>
+                <div>
+                    <img src="./images/companies/paypal.png" alt="Paypal logo">
+                </div>
+                <div>
+                    <img src="./images/companies/royal_mail.png" alt="Royal mail logo">
+                </div>
+                <div>
+                    <img src="./images/companies/visa.png" alt="visa logo">
+                </div>
+
+            </div>
+            <div class="security">
+                <span class="image-cont">
+                    <img class="secure-img" src="./images/secure_payments.png" alt="secure payments">
+                </span>
+                <span class="image-cont">
+                    <img class="secure-img" src="./images/download.png" alt="100% secure payments">
+                </span>
+            </div>
+        </div>
+        <div class="copywrite">
+            <p>COPYRIGHT © BOARDSHOP.CO.UK 2023</p>
+            <p>WEBSITE BY OUTER/EDGE</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
